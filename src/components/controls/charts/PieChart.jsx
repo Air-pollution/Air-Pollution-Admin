@@ -39,7 +39,7 @@ const PieChart = ({ data, labels }) => {
         <div className='relative bg-white px-10 py-10 mb-10 rounded-xl shadow-lg h-[400px] 
                         2xl:w-[500px]'>
             <div className='absolute right-10 top-5'>
-                <ComboBox options={['2023', '2022']}/>    
+                <ComboBox options={['2024']}/>    
             </div>  
             <canvas ref={chartRef} />
         </div>

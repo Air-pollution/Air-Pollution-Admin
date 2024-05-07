@@ -64,7 +64,7 @@ const BarChart = ({ data, labels }) => {
                         h-[400px]
                         2xl:w-[1000px]'>
             <div className='absolute right-10 top-5'>
-                <ComboBox options={['2023', '2022']}/>    
+                <ComboBox options={['2024']}/>    
             </div>                   
             <canvas ref={chartRef}/>
         </div>

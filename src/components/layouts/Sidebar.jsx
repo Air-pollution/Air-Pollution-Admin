@@ -5,8 +5,8 @@ import { Link, useLocation, useNavigate } from 'react-router-dom'
 import classNames from 'classnames'
 import Swal from 'sweetalert2';
 
-const linkClass = 'flex items-center gap-2 text-2xl font-light px-3 py-2 hover:bg-yellow-500 hover:no-underline hover:text-white focus:bg-yellow-500 active:bg-yellow-500 rounded-lg';
-const buttonLogoutClass = 'cursor-pointer flex items-center gap-2 text-red-500 font-light px-3 py-2 mb-3 hover:bg-yellow-500 hover:no-underline hover:text-white focus:bg-yellow-600 active:bg-yellow-600 rounded-lg'
+const linkClass = 'flex items-center gap-2 font-light px-3 py-2 hover:bg-violet-800 hover:no-underline hover:text-white focus:bg-violet-800 active:bg-violet-800 rounded-lg';
+const buttonLogoutClass = 'cursor-pointer flex items-center gap-2 text-red-500 font-light px-3 py-2 mb-3 hover:bg-red-500 hover:no-underline hover:text-white focus:bg-red-500 active:bg-red-500 rounded-lg'
 
 const Sidebar = () => {
     let navigate = useNavigate();
@@ -31,19 +31,19 @@ const Sidebar = () => {
     }
 
     return (
-        <div className='bg-orange-300 flex flex-col min-w-[300px] min-h-screen'>
-            <div className='flex items-center gap-2 px-6 py-5 bg-orange-400 flex-shrink-0'>
+        <div className='bg-violet-900 flex flex-col min-w-[300px] min-h-screen'>
+            <div className='flex items-center gap-2 px-6 py-5 bg-violet-950 flex-shrink-0'>
                 <img src={Logo} alt='WebsiteLogo' className='h-10 w-10' />
                 <div className='self-center text-3xl font-semibold whitespace-nowrap text-white'>
                     DASHBOARD
                 </div>
             </div>
-            <div className='flex flex-1 flex-col px-5 gap-2 py-2 bg-orange-500'>
+            <div className='flex flex-1 flex-col px-5 gap-2 py-2 bg-violet-900'>
                 {DASHBOARD_SIDEBAR_LINKS.map((link) => (
                     <SidebarLink key={link.key} link={link} />
                 ))}
             </div>
-            <div className='flex flex-col px-5 gap-2 py-2 pt-5 border-t border-white bg-orange-500'>
+            <div className='flex flex-col px-5 gap-2 py-2 pt-5 border-t border-white  bg-violet-900'>
                 {DASHBOARD_SIDEBAR_BOTTOM_LINKS.map((link) => (
                     <SidebarLink key={link.key} link={link} />
                 ))}
